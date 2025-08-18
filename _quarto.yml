@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "Evaluatie archeologie 20255"
+  subtitle: "Kenniswinst en uitvoering archeologieregelgeving"
+  author: "Kristof Haneca"
+  date: "18/8/2025"
+  chapters:
+    - 1_Doelstelling.qmd
+    - 2_Archeologietraject.qmd
+    - 3_Numerieke_analyse.qmd
+    - 4_Inhoudelijke_informatie
+    - 5_Evaluatie_uitvoering
+    - 6_Bibliografie.qmd
+    - 7_Bijlagen
+
+bibliography: bibliografie.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+
