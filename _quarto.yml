@@ -1,29 +1,55 @@
 project:
   type: book
+  output-dir: book
+
+execute:
+  echo: false
+
+lang: nl
 
 book:
-  title: "Evaluatie archeologie 20255"
+  title: "Evaluatie archeologie 2025"
   subtitle: "Kenniswinst en uitvoering archeologieregelgeving"
-  author: "Kristof Haneca"
-  date: "18/8/2025"
+  author: 
+    - name: Kristof Haneca
+      orcid: 0000-0002-7719-8305
+      affiliation: "agentschap Onroerend Erfgoed"
+
+  publisher: "agentschap Onroerend Erfgoed"
+  date: today
+  repo-url: https://github.com/hanecakr/EVARCH_2025/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  site-url: https://publicaties.onroerenderfgoed.be/HAOE-16-Dendrochronologie/
+
   chapters:
+    - index.qmd
+    - 0_todo.qmd
     - 1_Doelstelling.qmd
     - 2_Archeologietraject.qmd
     - 3_Numerieke_analyse.qmd
-    - 4_Inhoudelijke_informatie
-    - 5_Evaluatie_uitvoering
+    - 4_Inhoudelijke_informatie.qmd
+    - 5_Evaluatie_uitvoering.qmd
     - 6_Bibliografie.qmd
-    - 7_Bijlagen
+    - 7_Bijlagen.qmd
 
 bibliography: bibliografie.bib
+
+title-block-banner: "#0e4d1c"
+title-block-banner-color: white
 
 format:
   html:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: scrreprt
 
+lightbox: true
 
-
+language:
+  toc-title-document: "Op deze pagina"
+  search-no-results-text: "Geen resultaat"
+  repo-action-links-edit: "Bewerk deze pagina"
+  title-block-author-plural: "auteurs"
+  title-block-published: "laatste update"
+  title-block-affiliation-plural: "affiliatie"

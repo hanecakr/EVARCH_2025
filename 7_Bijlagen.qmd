@@ -1,4 +1,3 @@
-# References {.unnumbered}
+# Bijlagen {.unnumbered}
 
-::: {#refs}
-:::
+

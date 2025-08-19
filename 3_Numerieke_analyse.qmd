@@ -1,5 +1,222 @@
-# Preface {.unnumbered}
+# Numerieke analyse documentenstroom
+```{r}
+#| echo: false
+source("_common.R")
+```
 
-This is a Quarto book.
+In wat volgt, worden de resultaten samengevat van de archeologische projecten die onder de regelgeving van het Onroerenderfgoeddecreet vielen, en waarvoor **tussen 1 januari en 31 december `{r} werkjaar`** documenten in het **archeologieportaal**[^3_numerieke_analyse-1] opgeladen zijn. Naast de gegevens die ingevuld worden bij het indienen van deze documenten, nemen we extra gegevens mee die binnen het agentschap of daarbuiten beschikbaar zijn. Op basis van al deze data maken we bijkomende analyses die bepaalde aspecten verder uitdiepen.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+[^3_numerieke_analyse-1]: <https://loket.onroerenderfgoed.be/archeologie>. Het archeologieportaal is een digitaal platform dat door het agentschap ter beschikking wordt gesteld aan de erkende archeologen, voor het indienen van de documenten die het archeologisch traject onder het Onroerenderfgoeddecreet genereert.
+
+De basisdata voor deze analyses, alsook de analyses zelf, worden niet in de tekst opgenomen. Wanneer de tekst verwijst naar indicatoren als ’evarch’, ‘analyse’ of ‘LTAnalyse’ (langetermijnanalyse) dan zijn de basisdata of een grafische voorstelling opgenomen in de bijlage.
+
+::: callout-important
+## voorlopige versie
+
+De hierna volgende cijfers zijn nog onvolledig voor het werkjaar 2025!
+:::
+
+In `{r} werkjaar` werd door het agentschap Onroerend Erfgoed en de erkende onroerenderfgoedgemeenten van `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> nrow()` ingediende documenten – waar dat nodig was [^3_numerieke_analyse-2] – akte genomen. Tot het kader van het ‘archeologisch onderzoek bij vergunningsplichtige ingrepen in de bodem’ (VI) horen `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(KADER_kort == 'VI') |> nrow()` documenten, tot dit van het ‘archeologisch onderzoek met het oog op wetenschappelijke vraagstellingen’ (WV) `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(KADER_kort == 'WV') |> nrow()` documenten, en binnen het kader van de ‘toevalsvondsten’ (TV) zijn er `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(KADER_kort == 'TV') |> nrow()` documenten verzameld. Deze documenten verdelen zich over volgende types:
+
+[^3_numerieke_analyse-2]: Bij archeologierapporten en eindverslagen is er geen aktename.
+
+-   de archeologienota VI,
+-   de nota VI,
+-   het archeologierapport VI,
+-   het eindverslag VI,
+-   het archeologierapport WV,
+-   het eindverslag WV,
+-   het archeologierapport TV,
+-   het eindverslag TV.
+
+In totaal meldden de erkende archeologen **xxxx** archeologienota’s en **xxxx** nota’s (evarch 17). Bij `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'archeologienota') |> nrow()` archeologienota’s (**xx,x**%) en `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'nota') |> nrow()` nota’s (**xx,x**%) volgde na beoordeling door het agentschap of de erkende onroerenderfgoedgemeente een aktename, al dan niet met voorwaarden. Het aantal in akte genomen archeologienota’s **daalt/stijgt** in vergelijking met `{r} werkjaar -1` (**xx,x**%) terwijl het aantal nota’s met aktename quasi **gelijk blijft/stijgt/daalt** (**xx,x**%) (@fig-documenten).
+
+In bepaalde gevallen verbinden het agentschap Onroerend Erfgoed of de erkende onroerenderfgoedgemeente voorwaarden aan de aktename. Dat gebeurde in `{r} werkjaar -1` bij **x,x**% van de aktenames van archeologienota’s en in **x,x**% van de nota’s.
+
+**xxx** stuks van de `{r} AP_docs |>  dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'archeologienota') |> nrow()` archeologienota’s met aktename waren archeologienota’s met beperkte samenstelling. Dat is **x,x**% wat een lichte daling/stijging is ten opzichte van `{r} werkjaar -1` (**x,x**%, evarch 59).
+
+Wanneer de erkend archeoloog vooronderzoek met ingreep in de bodem wil uitvoeren binnen de archeologienota dan moet deze een toelating voor vooronderzoek met ingreep in de bodem uitvoeren. In `{r} werkjaar` vroegen erkende archeologen **xx** van dergelijke toelatingen aan (evarch 27, evarch 28, evarch 29). Vier van deze toelatingsaanvragen voldeden niet, wat leidde tot **xx** effectief verleende toelatingen in `{r} werkjaar`. Daarmee daalt het aantal verleende toelatingen voor vooronderzoek met ingreep in de bodem ten opzichte van `{r} werkjaar -1`, waar **xx** aanvragen werden ingediend en er **xx** toelatingen toelating werden verleend.
+
+In de archeologienota’s en nota’s worden maatregelen opgenomen voor vervolgonderzoek (evarch 51). Bij de archeologienota’s uit `{r} werkjaar` stelt **xx,x**% dat geen verdere maatregelen nodig zijn. **x,x**% bevat een opgraving als maatregel en **x,x**% stelt een behoud *in situ* voor. **0,x**% geeft aanleiding tot verdere verwerking van het ensemble samengesteld tijdens het vooronderzoek, zonder dat een opgraving nog nodig is. De meerderheid, namelijk **xx**, **x**%, concludeert dat een uitgesteld vooronderzoek aan de orde is. In sommige gevallen is het mogelijk dat er meerdere maatregelen opgelegd worden in een archeologienota, bijvoorbeeld een opgraving binnen één deel van het plangebied en een behoud in situ binnen een ander deel. Dit is het geval in **x,x**% van de archeologienota’s.
+
+Bij de nota’s liggen de verhoudingen anders. Daar neemt **xx,x**% in `{r} werkjaar` de beslissing dat geen verdere maatregelen nodig zijn, besluit **xx,x**% tot opgraving en stelt **x,x**% een behoud *in situ* voor. ‘Verdere verwerking’ komt op **x**%. De maatregel ‘uitgesteld vooronderzoek’ komt bij **x,x1**% van de nota’s voor. Dit zijn voornamelijk dossiers waarbij er na het verlenen van de omgevingsvergunning besloten wordt om gefaseerd te werken of waarbij de geplande werkzaamheden licht wijzigen. In sommige gevallen is het mogelijk dat er meerdere maatregelen opgelegd worden in een nota, bijvoorbeeld een opgraving binnen één deel van het plangebied en een behoud in situ binnen een ander deel. Dit is het geval in **x,x**% van de nota’s.
+
+Als we kijken naar de totale groep van afgeronde vooronderzoeken dan zien we dat **x,x**% beslist dat geen verdere maatregelen nodig zijn (LTAnalyse 1). **xx,x**% besluit tot een opgraving, al beslaat die niet altijd het volledige plangebied. Louter behoud in situ en verdere verwerking van het verzamelde materiaal uit het vooronderzoek landen op respectievelijk **x**% en **0,x**%. De verschillen in percentages tegenover vorig jaar bedragen nooit meer dan **0,x**%.
+
+Wanneer blijkt dat een opgraving nodig is, moet de erkend archeoloog ook melden wanneer de opgraving aangevat wordt. In `{r} werkjaar` ontving het agentschap Onroerend Erfgoed **xxx** meldingen van aanvang voor opgravingen (evarch 44). Het kader met het hoogste aantal meldingen zijn de opgravingen bij vergunningsplichtige ingrepen. Daarvan startten er 238 op, een stijging met **xx** ten opzichte van `{r} werkjaar -1`.
+
+```{r}
+#| echo: false
+
+n_EV_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'eindverslag') |> nrow()
+n_EV_VI_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'eindverslag') |> dplyr::filter(KADER_kort == "VI") |> nrow()
+n_EV_WV_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'eindverslag') |> dplyr::filter(KADER_kort == "WV" | KADER_kort == "TV") |> nrow()
+
+n_EV_werkjaar_1 <- AP_docs |> dplyr::filter(jaar == werkjaar -1) |> dplyr::filter(TYPE_NAAM == 'eindverslag') |> nrow()
+n_EV_VI_werkjaar_1 <- AP_docs |> dplyr::filter(jaar == werkjaar -1) |> dplyr::filter(TYPE_NAAM == 'eindverslag') |> dplyr::filter(KADER_kort == "VI") |> nrow()
+
+perc_EV_VI <- round(100*n_EV_VI_werkjaar/n_EV_werkjaar, 0)
+perc_EV_VI_1 <- round(100*n_EV_VI_werkjaar_1/n_EV_werkjaar_1, 0)
+
+perc_EV_diff <- 100* (n_EV_werkjaar_1 - n_EV_werkjaar)/ n_EV_werkjaar_1
+
+```
+
+Na de verwerking van het opgegraven materiaal en de opgemaakte onderzoeksdocumenten, stelt de erkende archeoloog een eindverslag op. Daarin wordt de volledige verslaggeving over het archeologisch onderzoek en de beantwoording van de onderzoeksvragen gerapporteerd. De maximale termijn voor het indienen van een eindverslag bedraagt twee jaar na het beëindigen van de opgraving. In `{r} werkjaar` ontving het agentschap `{r} n_EV_werkjaar` eindverslagen (evarch 35), waarvan `{r} n_EV_VI_werkjaar` (`{r} n_EV_VI_werkjaar`%) volgden op een opgraving in het kader van vergunningsplichtige ingrepen. Dat zijn `{r} perc_EV_diff`% **minder/meer** ontvangen eindverslagen dan het voorgaande jaar. Voor vooronderzoeken en opgravingen in het kader van wetenschappelijke vraagstellingen – dit omvat zowel de wetenschappelijke vraagstelling als de toevalsvondsten – dienden de erkende archeologen `{r} n_EV_WV_werkjaar` eindverslagen in (@tbl-documenten).
+
+```{r}
+#| label: tbl-documenten
+#| tbl-cap: !expr paste("Aantal documenten in", werkjaar, "ingediend waarvan (indien nodig) akte werd genomen, per type en per kader.")
+
+n_docs_table <-
+  AP_docs |>
+  dplyr::filter(jaar == werkjaar) |>
+  dplyr::select(KADER_kort, TYPE_NAAM) |>
+  dplyr::group_by(KADER_kort, TYPE_NAAM) |>
+  dplyr::summarise(n = dplyr::n(), .groups = "drop") |>
+  tidyr::pivot_wider(names_from = KADER_kort, values_from = n, values_fill = NA) |>
+  dplyr::mutate(
+    TYPE_NAAM = as.character(TYPE_NAAM),
+    # Calculate totals and percentages in the pipeline
+    totaal = rowSums(dplyr::across(where(is.numeric)), na.rm = TRUE),
+    perc = round(totaal / sum(totaal, na.rm = TRUE) * 100, 1)
+  )
+
+totals_row <- n_docs_table |>
+  dplyr::summarise(
+    TYPE_NAAM = "totaal",
+    dplyr::across(where(is.numeric), ~ sum(.x, na.rm = TRUE))
+  )
+
+n_docs_table <- dplyr::bind_rows(n_docs_table, totals_row)
+
+n_docs_table |>
+  gt::gt() |>
+  gt::cols_label(
+    TYPE_NAAM = "",
+    perc = "%"
+  ) |>
+  gt::sub_missing(
+    columns = everything(),
+    missing_text = "-"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_column_labels()
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_body(rows = TYPE_NAAM == "totaal")
+  ) |>
+  gt::tab_style(
+    style = gt::cell_borders(sides = "top", weight = gt::px(2)),
+    locations = gt::cells_body(rows = TYPE_NAAM == "totaal")
+  )
+
+```
+
+Wanneer iemand buiten de context van een archeologisch onderzoek per toeval archeologische artefacten of een archeologische site vindt, moet hij dit melden aan het agentschap Onroerend Erfgoed. Dit gebeurde **xxx** maal in `{r} werkjaar`. **xx** meldingen leidden tot een opgraving (evarch 12).
+
+Tabel 3.1 geeft de aantallen van in `{r} werkjaar` ingediende en bekrachtigde documenten, per type en per kader. Het is duidelijk dat in `{r} werkjaar` – net als de voorafgaande jaren – de overgrote meerderheid van de projecten binnen het kader van vergunningsplichtige ingrepen in de bodem (VI) verliep terwijl documenten gerelateerd met initiatieven vanuit wetenschappelijke vraagstelling (WV) gering in aantal waren. Het aantal documenten met betrekking tot het rapporteren van de resultaten van toevalsvondsten (TV) steeg aanzienlijk t.o.v. de voorgaande jaren.
+
+```{r}
+#| echo: false
+n_docs_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> nrow()
+n_N_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'nota') |> nrow()
+n_AN_werkjaar <- AP_docs |> dplyr::filter(jaar == werkjaar) |> dplyr::filter(TYPE_NAAM == 'archeologienota') |> nrow()
+
+perc_N_werkjaar <- round(n_N_werkjaar/n_docs_werkjaar*100, 0)
+
+n_docs_4 <- AP_docs |> dplyr::filter(jaar == werkjaar -4) |> nrow()
+n_docs_3 <- AP_docs |> dplyr::filter(jaar == werkjaar -3) |> nrow()
+n_docs_2 <- AP_docs |> dplyr::filter(jaar == werkjaar -2) |> nrow()
+n_docs_1 <- AP_docs |> dplyr::filter(jaar == werkjaar -1) |> nrow()
+```
+
+Binnen de VI-projecten overheersen de archeologienota’s terwijl nota’s geringer in aantal zijn. De nota’s maken in aantal ongeveer `{r} perc_N_werkjaar`% uit van het totaal aantal documenten waarvan akte werd genomen. In `{r} werkjaar` zijn er in totaal iets **minder/meer** documenten ingediend (`{r} AP_docs |> dplyr::filter(jaar == werkjaar) |> nrow()`) waarvan (indien nodig) akte werd genomen dan in de afgelopen 4 jaar (`{r} n_docs_4` in `{r} werkjaar -4`, `{r} n_docs_3` in `{r} werkjaar -3`, `{r} n_docs_2` in `{r} werkjaar -2` en `{r} n_docs_1` in `{r} werkjaar -1`). De evolutie in het aantal ingediende documenten is weergegeven in @fig-documenten. Het aantal archeologienota’s ligt lager dan de voorgaande vier werkjaren, terwijl een vrij gelijkaardig aantal nota’s werd ontvangen als in de voorbije drie jaar. Zowel bij de archeologierapporten als bij eindverslagen is er een duidelijke daling in het aantal ingediende documenten t.o.v. 2023 (@fig-documenten en @tbl-documenten_maand).
+
+```{r}
+#| label: tbl-documenten_maand
+#| tbl-cap: "Gemiddeld aantal ingediende documenten per maand, per jaar."
+ 
+docs_maand <-
+  AP_docs |>
+  dplyr::select(jaar, TYPE_NAAM) |>
+  dplyr::group_by(jaar, TYPE_NAAM) |>
+  dplyr::summarise(gem_maand = round(dplyr::n() / 12, 1), .groups = "drop") |>
+  tidyr::pivot_wider(names_from = jaar, values_from = gem_maand)
+
+docs_maand |>
+  gt::gt() |>
+  gt::cols_label(
+    TYPE_NAAM = ""
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = TYPE_NAAM
+  ) |>
+  gt::sub_missing(
+    columns = everything(),
+    missing_text = "-"
+  ) |>
+  gt::fmt_number(
+    columns = where(is.numeric),
+    decimals = 1,
+    use_seps = FALSE,
+    dec_mark = ","
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_column_labels()
+  )
+```
+
+Bij de eindverslagen moet wel worden opgemerkt dat in 2023 – met 303 ingediende exemplaren – het hoogste aantal ontvangen documenten sinds de invoering van het Onroerenderfgoeddecreet werd opgetekend. Het aantal in `{r} werkjaar` ontvangen eindverslagen ligt weliswaar **lager/hoger** dan in 2022, 2023 en 2024, maar nog binnen de 10% variatie t.o.v. 2021, 2022 en 2024. In `{r} werkjaar` werden per maand gemiddeld `{r} round(n_EV_werkjaar/12, 0)` eindverslagen van archeologische opgravingen ingediend op het archeologieportaal (@tbl-documenten_maand).
+
+
+```{r}
+#| label: fig-documenten
+#| fig-cap: "Evolutie van het aantal documenten in het archeologieportaal waarvan akte werd genomen (indien nodig), per type en per jaar."
+#| warning: false
+
+library(ggplot2)
+
+AP_docs |>
+     dplyr::group_by(jaar, TYPE_NAAM) |>
+     dplyr::count() |>
+     ggplot2::ggplot(ggplot2::aes(x = jaar, fill = TYPE_NAAM)) +
+     ggplot2::geom_col(ggplot2::aes(y = n)) +
+     ggplot2::geom_text(ggplot2::aes(
+          x = jaar,
+          y = n ,
+          label = n,
+          vjust = ifelse(n <= 50, -0.2, 1.3)
+     ),
+     hjust = "center",
+     size = 3) +
+     ggplot2::facet_wrap(vars(TYPE_NAAM), ncol = 1, scales = "free_y",
+                labeller = labeller(TYPE_NAAM = c(
+                  archeologienota = "archeologienota's",
+                  nota = "nota's",
+                  archeologierapport = "archeologierapporten",
+                  eindverslag = "eindverslagen")
+                                    )) +
+     ggplot2::theme_minimal() +
+     ggplot2::scale_fill_manual(values = c("#2B83BA", "#ABDDA4", "#FDAE61", "#D7191C")) +
+     ggplot2::theme(
+          legend.position = "none",
+          text = element_text(size = 10),
+          axis.text.x = element_text(size = 10),
+          strip.background = element_rect(color = "grey90", fill = "grey95")
+     ) +
+     ggplot2::labs(y = "aantal", x = "") +
+     ggplot2::scale_x_continuous(breaks = c(2016:werkjaar), labels = c(2016:werkjaar))
+
+ggsave(plot = last_plot(),
+       dpi = 400,
+       height = 20,
+       width = 20,
+       unit = 'cm',
+       here::here('figuren', paste0(rapport, 'aantallen.jpg'))
+)
+```

@@ -1,3 +1,56 @@
-# Summary
+# Het archeologietraject
 
-In summary, this book has no content whatsoever.
+## Kaders
+
+Het Onroerenderfgoeddecreet voorziet drie kaders voor archeologisch onderzoek[^archeologietraject-1]:
+
+[^archeologietraject-1]: Vandenhende *et al.* 2018, 261-262.
+
+-   een eerste kader vormt het archeologisch onderzoek bij *vergunningsplichtige ingrepen in de bodem*[^archeologietraject-2], ook wel Malta-archeologie genoemd, naar het Verdrag van Malta of Verdrag van Valletta. Het Verdrag van Malta werd door België ondertekend op 30 januari 2002 en geratificeerd op 8 oktober 2010. Het trad voor België in werking op 9 april 2011;
+
+[^archeologietraject-2]: <https://www.onroerenderfgoed.be/archeologisch-onderzoek-bij-vergunningsaanvragen>.
+
+-   een tweede kader is het archeologisch onderzoek volgend op de melding van een *toevalsvondst*[^archeologietraject-3]. Van dergelijke vondsten is het verplicht binnen de drie dagen aangifte te doen bij het agentschap Onroerend Erfgoed, waarna het agentschap, indien de toevalsvondst archeologische waarde heeft en na een grondige evaluatie van het potentieel op kenniswinst, overgaat tot archeologisch onderzoek met ingreep in de bodem. De toevalsvondsten vallen eveneens onder het Verdrag van Malta;
+
+[^archeologietraject-3]: <https://www.onroerenderfgoed.be/ik-wil-een-toevalsvondst-melden>.
+
+-   een derde kader is het archeologisch onderzoek met het oog op *wetenschappelijke vraagstellingen*[^archeologietraject-4]. Hieronder valt elke vorm van archeologisch onderzoek die niet vervat zit onder de twee eerder aangehaalde categorieën.
+
+[^archeologietraject-4]: <https://www.onroerenderfgoed.be/archeologisch-onderzoek-vanuit-wetenschappelijke-vraagstelling>.
+
+## De erkende archeoloog
+
+De erkende archeoloog moet voorafgaand aan elk onderzoek dat ingrijpt in de bodem zijn onderzoeksintenties verduidelijken. Hij is dus verplicht om de noodzaak van het onderzoek te motiveren en de manier waarop hij dat wenst uit te voeren. Voor een vooronderzoek zonder ingreep in de bodem, zoals archiefonderzoek, landschappelijk bodemonderzoek of veldkartering, is geen toelating nodig. Dat brengt immers geen vernietiging van of schade aan archeologisch erfgoed met zich mee. Vooronderzoek met ingreep in de bodem is wel gebonden aan een toelating vanwege Onroerend Erfgoed of de erkende onroerenderfgoedgemeente. Volstaat de voorgestelde aanpak niet, dan is een weigering mogelijk of kunnen er voorwaarden verbonden worden aan de toelating.
+
+Wanneer in het kader van een vergunningsplichtig bouwwerk een uitgesteld vooronderzoek met ingreep in de bodem of een opgraving noodzakelijk is, vormt de archeologienota of nota daar de toelating voor. Bij opgravingen geldt de randvoorwaarde dat de omgevingsvergunning wel al moet verleend zijn en de vergunde werken moeten overeenstemmen met de werken omschreven in de (archeologie)nota. Aangezien de toelating geen beperking kent in geldigheidstermijn, moet de erkende archeoloog het agentschap of de erkende onroerenderfgoedgemeente op de hoogte brengen wanneer hij het veldwerk van zijn onderzoek start. Dat gebeurt via de melding van aanvang.
+
+## Documenten
+
+Deze drie kaders genereren elk specifieke documenten die de resultaten van het uitgevoerde onderzoek beschrijven.
+
+Bij het **archeologisch onderzoek bij vergunningsplichtige ingrepen in de bodem** ontstaan volgende types van documenten (zie @fig-archeologietraject)[^archeologietraject-5]:
+
+-   de **archeologienota**, opgemaakt vóór het bekomen van een vergunning op basis van een *archeologisch vooronderzoek zonder of met ingreep in de bodem*, met administratieve gegevens, een verslag over de resultaten van het onderzoek, een beslissing en een plan van aanpak voor de maatregelen die daaruit volgen;
+
+-   de **nota**, opgemaakt op basis van een *archeologisch vooronderzoek met ingreep in de bodem* dat is uitgevoerd na het bekomen van een vergunning. Daarin zijn opgenomen: administratieve gegevens, een verslag van de resultaten van het onderzoek, een beslissing, en een plan van aanpak voor de maatregelen die daaruit volgen;
+
+-   het **archeologierapport**, opgemaakt op basis van een *archeologische opgraving*, met administratieve gegevens, een voorlopig verslag van de werkzaamheden en resultaten, en een aanpak voor het verdere onderzoek (in te dienen twee maanden na het beëindigen van het terreinonderzoek); 
+
+-   het **eindverslag**, opgemaakt op basis van een *archeologische opgraving*, met administratieve gegevens en een definitief verslag van de resultaten (in te dienen twee jaar na het beëindigen van het terreinonderzoek).
+
+
+::: {#fig-archeologietraject}
+
+![](figuren/archeologietraject.jpg)
+
+Schematische voorstelling van het archeologietraject bij archeologisch onderzoek bij vergunningsplichtige ingrepen in de bodem, zoals geldend vanaf 1 april 2019. De aktename kan zowel door het agentschap Onroerend Erfgoed als een erkende onroerenderfgoedgemeente worden uitgevoerd.
+:::
+
+
+Aan het schema in @fig-archeologietraject moet nog de nuance worden toegevoegd waarbij de erkende archeoloog binnen het archeologietraject, na het afronden van vooronderzoek met ingreep in de bodem, beslist dat het aanwezige kennispotentieel binnen het projectgebied kan geëxploiteerd worden louter door een verdere verwerking van de ingezamelde vondsten en geregistreerde sporen en structuren. Een bijkomende inzameling van vondsten en registratie van sporen op het terrein, in de vorm van een opgraving, is dan niet nodig. Dit kan bijvoorbeeld het geval zijn wanneer bij een proefsleuvenonderzoek een geïsoleerd brandrestengraf wordt aangetroffen. Verder onderzoek op het terrein door middel van opgraving brengt geen extra gegevens op, maar het aangetroffen graf (inclusief de vondsten en stalen) dient wel diepgaander onderzocht te worden dan normaal het geval zou zijn bij een vooronderzoek. In deze situatie volgt de rapportering over deze verdere verwerking in de vorm van een nota. Deze nota’s (in wat volgt aangeduid als ‘**nota’s met eindafwerking**’) worden, samen met de eindverslagen, meegenomen in de inhoudelijke evaluatie van kenniswinst.
+
+Het **archeologisch onderzoek met het oog op wetenschappelijke vraagstellingen** produceert, in het geval het gaat om ingrepen in de bodem, een archeologierapport en een eindverslag. De termijnen voor het afwerken daarvan zijn dezelfde als bij de bovenstaande categorie. Toelatingen voor archeologisch onderzoek dat noodzakelijk is in het kader van niet-vergunningsplichtige handelingen aan beschermd erfgoed volgen het traject van de wetenschappelijke vraagstellingen.
+
+Voor de **toevalsvondsten** geldt dat, indien deze tot een opgraving leiden, deze ingreep wordt uitgevoerd zoals een archeologisch onderzoek met het oog op wetenschappelijke vraagstellingen. Er worden dus achtereenvolgens een archeologierapport en een eindverslag opgesteld, waarbij de termijnen voor het afwerken dezelfde zijn als bij de bovenstaande twee categorieën.  
+
+[^archeologietraject-5]: De definities volgen deze uit de begrippenlijst van de Code van Goede Praktijk: <https://www.onroerenderfgoed.be/de-code-van-goede-praktijk>.
