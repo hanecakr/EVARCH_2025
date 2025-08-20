@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: book
+  output-dir: docs
 
 execute:
   echo: false
@@ -43,6 +43,7 @@ format:
     theme:
       - cosmo
       - brand
+    link-external-newwindow: true
 
 lightbox: true
 

@@ -1,14 +1,53 @@
 # Inhoudelijke informatie
 
-Overzicht van reeds nagelezen en ingevoerde eindverslagen en nota's met eindafwerking:
+```{r}
+#| echo: false
+source("_common.R")
+```
 
-https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727 
+::: callout-important
+## Centrale Archeologische Inventaris
 
-De basis van de hiernavolgende inhoudelijke analyse wordt gevormd door de eindverslagen en nota’s met eindafwerking (zie 2.3), in 2024 opgeladen in het archeologieportaal . Archeologierapporten werden in dit kader niet nagelezen aangezien deze documenten een voorafname zijn van het uiteindelijke eindverslag, waarbij voorlopig gepresenteerde resultaten en interpretaties na verdere studie nog inhoudelijk kunnen wijzigen. Dit rapport behandelt evenmin archeologienota’s en nota’s. De kenniswinst uit vooronderzoek is immers enkel voorlopig en zal bij projecten die tot een opgraving leiden uiteindelijk worden uitgediept in het eindverslag. Bij projecten die niet tot een opgraving leiden, blijft de kenniswinst uiteraard gering. Indien er toch interessante vondsten of observaties worden gedaan, worden die vervat in een nota met eindafwerking. 
+Voorlopig overzicht van reeds nagelezen en ingevoerde eindverslagen en nota's met eindafwerking:
 
-Voor 2024 zijn er 214 eindverslagen en 8 nota’s met eindafwerking beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er 154 tot het kader van vergunnings-plichtige ingrepen, 33 tot de projecten met wetenschappelijke vraagstelling, en 27 zijn ontstaan als gevolg van toevalsvondsten met ingreep in de bodem. Daarnaast worden bij de inhoudelijk evaluatie van de kenniswinst archeologie ook de negen in 2024 afgeronde eindverslagen behandeld van initiatieven die een projectsubsidie voor syntheseonderzoek hebben ontvangen  .
+<https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727>
+:::
+ 
 
-4.1	WERKWIJZE
+De basis van de hiernavolgende inhoudelijke analyse wordt gevormd door de eindverslagen en nota’s met eindafwerking (zie 2.3), in `{r} werkjaar` opgeladen in het archeologieportaal[^info-1]. Archeologierapporten werden in dit kader niet nagelezen aangezien deze documenten een voorafname zijn van het uiteindelijke eindverslag, waarbij voorlopig gepresenteerde resultaten en interpretaties na verdere studie nog inhoudelijk kunnen wijzigen. Dit rapport behandelt evenmin archeologienota’s en nota’s. De kenniswinst uit vooronderzoek is immers enkel voorlopig en zal bij projecten die tot een opgraving leiden uiteindelijk worden uitgediept in het eindverslag. Bij projecten die niet tot een opgraving leiden, blijft de kenniswinst uiteraard gering. Indien er toch interessante vondsten of observaties worden gedaan, worden die vervat in een nota met eindafwerking. 
+
+```{r}
+n_EV_werkjaar <- AP_docs |>
+  dplyr::filter(jaar == werkjaar) |>
+  dplyr::filter(TYPE_NAAM == 'eindverslag') |>
+  nrow()
+
+n_EV_VI_werkjaar <- AP_docs |>
+  dplyr::filter(jaar == werkjaar) |>
+  dplyr::filter(TYPE_NAAM == 'eindverslag') |>
+  dplyr::filter(KADER_kort == "VI") |>
+  nrow()
+
+n_EV_WV_werkjaar <- AP_docs |>
+  dplyr::filter(jaar == werkjaar) |>
+  dplyr::filter(TYPE_NAAM == 'eindverslag') |>
+  dplyr::filter(KADER_kort == "WV") |>
+  nrow()
+
+n_EV_TV_werkjaar <- AP_docs |>
+  dplyr::filter(jaar == werkjaar) |>
+  dplyr::filter(TYPE_NAAM == 'eindverslag') |>
+  dplyr::filter(KADER_kort == "TV") |>
+  nrow()
+
+# n_Syntar <- "tien"
+```
+Voor `{r} werkjaar` zijn er `{r} n_EV_werkjaar` eindverslagen en **X** nota’s met eindafwerking beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er `{r} n_EV_werkjaar` eindverslagen en **X** nota’s met eindafwerking beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er `{r} n_EV_VI_werkjaar` tot het kader van tot het kader van vergunningsplichtige ingrepen, `{r} n_EV_WV_werkjaar` tot de projecten met wetenschappelijke vraagstelling, en `{r} n_EV_TV_werkjaar` zijn ontstaan als gevolg van toevalsvondsten met ingreep in de bodem. Daarnaast worden bij de inhoudelijk evaluatie van de kenniswinst archeologie ook de **XXX** in `{r} werkjaar` afgeronde eindverslagen behandeld van initiatieven die een projectsubsidie voor syntheseonderzoek hebben ontvangen[^înfo-2].
+
+[^info-1]: <https://loket.onroerenderfgoed.be/archeologie>.
+[^înfo-2]: <https://www.onroerenderfgoed.be/projectsubsidies-voor-synthese-onderzoek>.
+
+## Werkwijze
 
 Bij de evaluatie van de kenniswinst in de opgeleverde eindverslagen en nota’s wordt niet enkel gebruik gemaakt van de metagegevens ingegeven in het archeologieportaal.; dDeze werden inhoudelijk aangevuld met informatie die uit de documenten zelf komt. Alle eindverslagen en nota’s met eindafwerking zijn daarvoor nagelezen. Deze doorlichting van deze eindverslagen en nota’s wordt op systematische wijze geregistreerd in de Centrale Archeologische Inventaris (CAI), waar voor elke rapportage van opgraving of archeologisch onderzoek een waarneming wordt aangemaakt. De fiche met de waarneming omvat zowel een tekstueel gedeelte, met per periode een korte toelichting bij de aangetroffen structuren, sporen en vondsten, als een gestructureerde registratie van zogenaamde kenmerkgroepen met daaraan gekoppelde gebeurtenissen (i.e., de toegepaste methode(n) bij het lokaliseren, registreren en onderzoeken van een archeologische vindplaats) en gestandaardiseerde termen (concepten). Hiervoor worden de gestandaardiseerde woordenlijsten van de thesaurus Onroerend Erfgoed gebruikt . Een dergelijke werkwijze laat toe om query’s uit te voeren en zo cijfermatig te evalueren hoe de kenniswinst is opgebouwd en samengesteld .
 
@@ -87,9 +126,9 @@ Het concept van de ‘kenmerkgroepen’ vormt een belangrijk onderdeel van de wa
  
 Fig. 4.3: Voorbeeld van een kenmerkgroep in de Centrale Aarcheologische Inventaris. Via gestandaardiseerde thesaurustermen wordt aan deze kenmerkgroep informatie over de aangetroffen materialen (hier aardewerk, keramisch bouwmateriaal en natuursteen), de datering (Romeinse tijd) en typologie van de archeologische sporen (waterputten) gekoppeld. De methoden en onderzoekstechnieken, zowel op het terrein (het type vooronderzoek en de opgraving zelf) als analyses op het ingezamelde materiaal (in dit geval een palynologisch en archeobotanisch onderzoek) worden via een gebeurtenis eveneens aan de kenmerkgroep gekoppeld.
 
-De CAI kan heel gericht doorzocht worden, zowel door de geïnteresseerde burger als door professionele erfgoedondernemers of -onderzoekers, door (een combinatie van) thesaurustermen te selecteren in de overeenstemmende velden  (fig. 4.4). De zoekopdracht geeft dan alle waarnemingen weer die gekoppeld zijn aan deze (combinatie van) kenmerken. Alle archeologische waarnemingen gerelateerd aan de in 2024 ontvangen eindverslagen, nota’s of conclusies uit de projecten archeologisch syntheseonderzoek zijn openbaar en publiek toegankelijk. Ze zijn gebundeld onder de gebeurtenis ‘Rapportage archeologie 2024’.
+De CAI kan heel gericht doorzocht worden, zowel door de geïnteresseerde burger als door professionele erfgoedondernemers of -onderzoekers, door (een combinatie van) thesaurustermen te selecteren in de overeenstemmende velden  (fig. 4.4). De zoekopdracht geeft dan alle waarnemingen weer die gekoppeld zijn aan deze (combinatie van) kenmerken. Alle archeologische waarnemingen gerelateerd aan de in `{r} werkjaar` ontvangen eindverslagen, nota’s of conclusies uit de projecten archeologisch syntheseonderzoek zijn openbaar en publiek toegankelijk. Ze zijn gebundeld onder de gebeurtenis ‘Rapportage archeologie `{r} werkjaar`’.
 
-Voor de evaluatie van de kenniswinst worden waarnemingen gebaseerd op de ontvangen eindverslagen en nota’s uit 2024 op basis van de gekoppelde thesaurustermen en gebeurtenissen bevraagd. De uitkomsten van deze query’s worden in de volgende paragrafen verder geanalyseerd.
+Voor de evaluatie van de kenniswinst worden waarnemingen gebaseerd op de ontvangen eindverslagen en nota’s uit `{r} werkjaar` op basis van de gekoppelde thesaurustermen en gebeurtenissen bevraagd. De uitkomsten van deze query’s worden in de volgende paragrafen verder geanalyseerd.
 
  
 Fig. 4.4: Het zoekformulier voor de module ‘waarnemingen’ van de Inventaris Onroerend Erfgoed . De databank met alle waarneming uit de inventaris vormt de Centrale Archeologische Inventaris (CAI).
