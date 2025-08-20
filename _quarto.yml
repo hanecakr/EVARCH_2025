@@ -24,7 +24,6 @@ book:
 
   chapters:
     - index.qmd
-    - 0_todo.qmd
     - 1_Doelstelling.qmd
     - 2_Archeologietraject.qmd
     - 3_Numerieke_analyse.qmd
@@ -34,6 +33,8 @@ book:
     - 7_Bijlagen.qmd
 
 bibliography: bibliografie.bib
+link-citations: true
+csl: relicta.csl
 
 title-block-banner: "#0e4d1c"
 title-block-banner-color: white
@@ -44,6 +45,7 @@ format:
       - cosmo
       - brand
     link-external-newwindow: true
+    footnotes-hover: true
 
 lightbox: true
 

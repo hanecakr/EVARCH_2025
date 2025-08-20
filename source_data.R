@@ -190,3 +190,18 @@ AP_docs <-
   sf::st_as_sf()
 
 saveRDS(AP_docs, here::here("data_processed", "AP_docs.rds"))
+
+########################################################################
+# DOCUMENTEN 2025 (EINDVERSLAGEN EN NOTA's MET EINDAFWERKING)
+
+EV2025 <- AP_docs |> 
+  dplyr::filter(jaar == werkjaar & TYPE_NAAM == "eindverslag" )
+
+# EVN2025 <- toevoegen van nota's met eindafwerking
+vv <- c(33451)
+notas_vv <- AP_docs |> 
+   dplyr::filter(ID %in% vv)
+
+EVN2025 <- rbind(EV2025, notas_vv)
+
+saveRDS(EVN2025, here::here("data_processed", "EVN2025.rds"))

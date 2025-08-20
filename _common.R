@@ -7,6 +7,7 @@ gemeentes <- readRDS(here::here("data_processed", "gemeentes.rds"))
 
 AP_docs_sf <- readRDS(here::here("data_processed", "AP_docs.rds"))
 AP_docs <- AP_docs_sf |> sf::st_drop_geometry() 
+EVN2025 <- readRDS(here::here("data_processed", "EVN2025.rds"))
 
 # Package availability check
 required_packages <- c(

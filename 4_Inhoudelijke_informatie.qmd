@@ -12,9 +12,10 @@ Voorlopig overzicht van reeds nagelezen en ingevoerde eindverslagen en nota's me
 
 <https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727>
 :::
- 
 
-De basis van de hiernavolgende inhoudelijke analyse wordt gevormd door de eindverslagen en nota’s met eindafwerking (zie 2.3), in `{r} werkjaar` opgeladen in het archeologieportaal[^info-1]. Archeologierapporten werden in dit kader niet nagelezen aangezien deze documenten een voorafname zijn van het uiteindelijke eindverslag, waarbij voorlopig gepresenteerde resultaten en interpretaties na verdere studie nog inhoudelijk kunnen wijzigen. Dit rapport behandelt evenmin archeologienota’s en nota’s. De kenniswinst uit vooronderzoek is immers enkel voorlopig en zal bij projecten die tot een opgraving leiden uiteindelijk worden uitgediept in het eindverslag. Bij projecten die niet tot een opgraving leiden, blijft de kenniswinst uiteraard gering. Indien er toch interessante vondsten of observaties worden gedaan, worden die vervat in een nota met eindafwerking. 
+De basis van de hiernavolgende inhoudelijke analyse wordt gevormd door de eindverslagen en nota’s met eindafwerking (zie 2.3), in `{r} werkjaar` opgeladen in het archeologieportaal[^4_inhoudelijke_informatie-1]. Archeologierapporten werden in dit kader niet nagelezen aangezien deze documenten een voorafname zijn van het uiteindelijke eindverslag, waarbij voorlopig gepresenteerde resultaten en interpretaties na verdere studie nog inhoudelijk kunnen wijzigen. Dit rapport behandelt evenmin archeologienota’s en nota’s. De kenniswinst uit vooronderzoek is immers enkel voorlopig en zal bij projecten die tot een opgraving leiden uiteindelijk worden uitgediept in het eindverslag. Bij projecten die niet tot een opgraving leiden, blijft de kenniswinst uiteraard gering. Indien er toch interessante vondsten of observaties worden gedaan, worden die vervat in een nota met eindafwerking.
+
+[^4_inhoudelijke_informatie-1]: <https://loket.onroerenderfgoed.be/archeologie>.
 
 ```{r}
 n_EV_werkjaar <- AP_docs |>
@@ -42,94 +43,405 @@ n_EV_TV_werkjaar <- AP_docs |>
 
 # n_Syntar <- "tien"
 ```
-Voor `{r} werkjaar` zijn er `{r} n_EV_werkjaar` eindverslagen en **X** nota’s met eindafwerking beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er `{r} n_EV_werkjaar` eindverslagen en **X** nota’s met eindafwerking beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er `{r} n_EV_VI_werkjaar` tot het kader van tot het kader van vergunningsplichtige ingrepen, `{r} n_EV_WV_werkjaar` tot de projecten met wetenschappelijke vraagstelling, en `{r} n_EV_TV_werkjaar` zijn ontstaan als gevolg van toevalsvondsten met ingreep in de bodem. Daarnaast worden bij de inhoudelijk evaluatie van de kenniswinst archeologie ook de **XXX** in `{r} werkjaar` afgeronde eindverslagen behandeld van initiatieven die een projectsubsidie voor syntheseonderzoek hebben ontvangen[^înfo-2].
 
-[^info-1]: <https://loket.onroerenderfgoed.be/archeologie>.
-[^înfo-2]: <https://www.onroerenderfgoed.be/projectsubsidies-voor-synthese-onderzoek>.
+Voor `{r} werkjaar` zijn er **`{r} n_EV_werkjaar` eindverslagen** en **x nota’s met eindafwerking** beschikbaar om de kenniswinst te evalueren. Bij de eindverslagen behoren er `{r} n_EV_VI_werkjaar` tot het kader van tot het kader van vergunningsplichtige ingrepen, `{r} n_EV_WV_werkjaar` tot de projecten met wetenschappelijke vraagstelling, en `{r} n_EV_TV_werkjaar` zijn ontstaan als gevolg van toevalsvondsten met ingreep in de bodem. Daarnaast worden bij de inhoudelijk evaluatie van de kenniswinst archeologie ook de **XXX** in `{r} werkjaar` afgeronde eindverslagen behandeld van initiatieven die een projectsubsidie voor syntheseonderzoek hebben ontvangen[^4_inhoudelijke_informatie-2].
+
+[^4_inhoudelijke_informatie-2]: <https://www.onroerenderfgoed.be/projectsubsidies-voor-synthese-onderzoek>.
 
 ## Werkwijze
 
-Bij de evaluatie van de kenniswinst in de opgeleverde eindverslagen en nota’s wordt niet enkel gebruik gemaakt van de metagegevens ingegeven in het archeologieportaal.; dDeze werden inhoudelijk aangevuld met informatie die uit de documenten zelf komt. Alle eindverslagen en nota’s met eindafwerking zijn daarvoor nagelezen. Deze doorlichting van deze eindverslagen en nota’s wordt op systematische wijze geregistreerd in de Centrale Archeologische Inventaris (CAI), waar voor elke rapportage van opgraving of archeologisch onderzoek een waarneming wordt aangemaakt. De fiche met de waarneming omvat zowel een tekstueel gedeelte, met per periode een korte toelichting bij de aangetroffen structuren, sporen en vondsten, als een gestructureerde registratie van zogenaamde kenmerkgroepen met daaraan gekoppelde gebeurtenissen (i.e., de toegepaste methode(n) bij het lokaliseren, registreren en onderzoeken van een archeologische vindplaats) en gestandaardiseerde termen (concepten). Hiervoor worden de gestandaardiseerde woordenlijsten van de thesaurus Onroerend Erfgoed gebruikt . Een dergelijke werkwijze laat toe om query’s uit te voeren en zo cijfermatig te evalueren hoe de kenniswinst is opgebouwd en samengesteld .
+Bij de evaluatie van de kenniswinst in de opgeleverde eindverslagen en nota’s wordt niet enkel gebruik gemaakt van de metagegevens ingegeven in het archeologieportaal. Deze werden inhoudelijk aangevuld met informatie die uit de documenten zelf komt. Alle eindverslagen en nota’s met eindafwerking zijn daarvoor nagelezen. Deze doorlichting van deze eindverslagen en nota’s wordt op systematische wijze geregistreerd in de **Centrale Archeologische Inventaris (CAI)**, waar voor elke rapportage van opgraving of archeologisch onderzoek een **waarneming** wordt aangemaakt. De fiche met de waarneming omvat zowel een tekstueel gedeelte, met per periode een korte toelichting bij de aangetroffen structuren, sporen en vondsten, als een gestructureerde registratie van zogenaamde **kenmerkgroepen** met daaraan gekoppelde **gebeurtenissen** (i.e., de toegepaste methode(n) bij het lokaliseren, registreren en onderzoeken van een archeologische vindplaats) en **gestandaardiseerde termen** (concepten). Hiervoor worden de gestandaardiseerde woordenlijsten van de **Thesaurus Onroerend Erfgoed** gebruikt[^4_inhoudelijke_informatie-3]. Een dergelijke werkwijze laat toe om query’s uit te voeren en zo cijfermatig te evalueren hoe de kenniswinst is opgebouwd en samengesteld[^4_inhoudelijke_informatie-4].
+
+[^4_inhoudelijke_informatie-3]: <https://thesaurus.onroerenderfgoed.be/>.
+
+[^4_inhoudelijke_informatie-4]: De hier geschetste werkwijze verschilt van de vorige werkjaren (periode 2018-2023) waar de cijfermatige evaluatie van de kenniswinst nog niet rechtstreek op de invoer in de CAI was gebaseerd. Sinds 2024 is dat wel het geval en wordt dezelfde werkwijze ook aangehouden in de evaluatie van het werkjaar 2025.
 
 De sleutelbegrippen en -concepten bij het registreren van de resultaten van een archeologisch onderzoek in de CAI – zoals gerapporteerd in het eindverslag of de nota – worden in de volgende paragrafen kort toegelicht.
 
-PERIODE	 			DATERING
- 	ONBEPAALD			
- 	STEENTIJD			
- 	PALEOLITHICUM		c. 1.300.000 - 12.000 calBP
- 	VROEGPALEOLITHICUM	c. 1.300.000 - c. 300.000 calBP
- 	MIDDENPALEOLITHICUM	300.000/250.000 - 40.000/30.000 calBP
- 	LAATPALEOLITHICUM	40.000 - 14.000 calBP
- 	FINAALPALEOLITHICUM	14.000 - 12.000 calBP
- 	MESOLITHICUM		9500 - 4000 BCE
- 	VROEGMESOLITHICUM	9500 - 7700 BCE
- 	MIDDENMESOLITHICUM	7700 - 7000/6500 BCE
- 	LAATMESOLITHICUM	7000/6500 - 5000 BCE
- 	FINAALMESOLITHICUM	5000 - c. 4000 BCE
- 	NEOLITHICUM		5250 - 3000 BCE
- 	VROEGNEOLITHICUM	5250 - 4800 BCE
- 	MIDDENNEOLITHICUM	4300 - 3500 BCE
- 	LAATNEOLITHICUM	3500 - 3000 BCE
- 	FINAALNEOLITHICUM	3000 - 2000 BCE
- 	METAALTIJDEN			
- 	BRONSTIJD		2000 - 800 BCE
- 	VROEGE BRONSTIJD	2000/2100 - 1800/1750 BCE
- 	MIDDENBRONSTIJD	1800/1750 - 1100 BCE
- 	LATE BRONSTIJD	1100 - 800 BCE
- 	IJZERTIJD		750 - 57 BCE
- 	VROEGE IJZERTIJD	800 - 600/450 BCE
- 	MIDDENIJZERTIJD	600 - 450 BCE
- 	LATE IJZERTIJD (WESTEN)	475/450 - 57 BCE
- 	LATE IJZERTIJD (OOSTEN)	250 - 57 BCE
- 	ROMEINSE TIJD			57 BCE - 406 CE
- 	VROEG-ROMEINSE TIJD		57 BCE - 69 CE
- 	MIDDEN-ROMEINSE TIJD		69 - 284 CE
- 	LAAT-ROMEINSE TIJD		284 - 406 CE
- 	MIDDELEEUWEN			
- 	VROEGE MIDDELEEUWEN		5de - 9de eeuw
- 	PRE-MEROVINGISCHE PERIODE	5de eeuw
- 	MEROVINGISCHE PERIODE	486 - 768 CE
- 	KAROLINGISCHE PERIODE	768 - 900 CE
- 	VOLLE MIDDELEEUWEN		10de - 12de eeuw
- 	LATE MIDDELEEUWEN		13de - 15de eeuw
- 	NIEUWE TIJD			16de - 18de eeuw
- 	NIEUWSTE TIJD			19de - 20ste eeuw
- 	WO I			1914 - 1918
- 	INTERBELLUM			1919 - 1938
- 	WO II			1939 - 1945(1946)
-Fig. 4.1: Chronologische periodisering aangehouden binnen de Centrale Archeologische Inventaris, zoals opgenomen in het conceptschema ‘dateringen’ van de thesaurus Onroerend Erfgoed (https://thesaurus.onroerenderfgoed.be/conceptschemes/DATERINGEN).
+::: {#fig-tijdlijn}
+![](figuren/tijdlijn_thesaurus.jpg)
 
- 
-Fig. 4.2: Voorbeeld van een waarneming in de Centrale Archeologische Inventaris, waarbij de hoofdtekst de resultaten van het onderzoek samenvat per hoofdperiode.
-4.1.1	De Centrale Archeologische Inventaris
-De Inventaris van het Onroerend Erfgoed geeft een overzicht van het waardevolle erfgoed in Vlaanderen . In de inventaris zijn zowel archeologisch, bouwkundig, landschappelijk als varend erfgoed opgenomen. Resultaten van archeologisch onderzoek of observaties met een zekere relevantie voor archeologisch onderzoek of beheer worden in de module ‘waarnemingen’ opgenomen. 
+Chronologische periodisering aangehouden binnen de Centrale Archeologische Inventaris, zoals opgenomen in het conceptschema ‘dateringen’ van de thesaurus Onroerend Erfgoed (<https://thesaurus.onroerenderfgoed.be/conceptschemes/DATERINGEN>).
+:::
 
-De ‘waarnemingen’ beschrijven resultaten van het archeologisch onderzoek of observaties die relevant zijn voor het begrijpen, waarderen en beheren van archeologische erfgoed . Alle onderzoeken met een archeologische ‘ingreep in de bodem’ worden ingevoerd als waarneming, inclusief verkennend booronderzoek. Dit omvat eveneens geofysisch onderzoek of veldkartering, indien deze acties ook archeologisch relevante waarnemingen opleverden. De hoofdtekst van de fiche omvat een inhoudelijke samenvatting van de waarneming, wat bij de eindverslagen en nota’s neerkomt op de resultaten en interpretatie van het uitgevoerde archeologisch onderzoek. Deze resultaten worden chronologisch gestructureerd volgens de hoofdperioden (fig. 4.1 en fig. 4.2).
+::: {#fig-waarneming_vb}
+![](figuren/fig_CAI_waarneming.jpg)
 
-De ‘waarnemingen’ worden altijd gekoppeld met één of meer ‘gebeurtenissen’. Een gebeurtenis wordt omschreven als het geheel of delen van onderzoeken die aan de oorsprong liggen van een ‘waarneming’. Een gebeurtenis bestaat dikwijls uit een combinatie van verschillende deelonderzoeken, bijvoorbeeld een proefsleuvenonderzoek gecombineerd met verkennend booronderzoek, of een opgraving gecombineerd met zaden- en vruchtenonderzoek, radiokoolstofdateringen, of andere natuurwetenschappelijke analyses. De fiche van de gebeurtenis omschrijft het type en de technische aspecten van het onderzoek, door gebruik te maken van relevante thesaurustermen (zie verder).
+Voorbeeld van een waarneming in de Centrale Archeologische Inventaris, waarbij de hoofdtekst de resultaten van het onderzoek samenvat per hoofdperiode.
+:::
 
-De archeologische waarnemingen vormen samen met de gerelateerde gebeurtenissen de Centrale Archeologische Inventaris (CAI). De CAI is een onmisbaar instrument voor het onderzoek en beheer van het archeologisch erfgoed, o.a. voor het opstellen van een verwachtingspatroon voor startende archeologietrajecten, voor het afbakenen en vaststellen van archeologische zones, het beschermen van archeologische sites, het afbakenen van gebieden waar geen archeologisch erfgoed te verwachten valt, de registratie en opvolging van toevalsvondsten, etc.
+### De Centrale Archeologische Inventaris
 
-4.1.2	Kenmerkgroepen
-Het concept van de ‘kenmerkgroepen’ vormt een belangrijk onderdeel van de waarnemingen. De kenmerkgroepen delen de waarneming op volgens inhoudelijk logische elementen. Een kenmerkgroep wordt gevormd door een combinatie van kenmerken die één archeologisch relevant geheel vormen. Aan een kenmerkgroep worden gebeurtenissen en inhoudelijke thema’s gekoppeld. Het belangrijkste instrument om de kenmerkgroepen en waarnemingen op een gestructureerde wijze te documenteren met een coherente terminologie, is de Thesaurus Onroerend Erfgoed. Het gebruik van thesaurustermen zorgt voor standaardisatie en structuur, en maakt de waarnemingen ook doorzoekbaar. De thesaurus bestaat uit verschillende schema’s of modules, waarbij de volgende relevant zijn voor de CAI:
- 
-• Typologie (erfgoedtypes): dit schema binnen de thesaurus is niet exclusief gelinkt aan archeologie. De concepten omvatten kernbegrippen voor de beschrijving van archeologische objecten, sporen, structuren en deposities, of types van landgebruik, en hun (oorspronkelijke) functie.
+De [**Inventaris van het Onroerend Erfgoed**](https://inventaris.onroerenderfgoed.be/) geeft een overzicht van het waardevolle erfgoed in Vlaanderen[^4_inhoudelijke_informatie-5]. In de inventaris zijn zowel archeologisch, bouwkundig, landschappelijk als varend erfgoed opgenomen. Resultaten van archeologisch onderzoek of observaties met een zekere relevantie voor archeologisch onderzoek of beheer worden in de module ‘waarnemingen’ opgenomen.
 
-• Context: dit is geen aparte thesaurus. De termen die kunnen worden toegekend als context zijn dezelfde als de termen die in de typologische thesaurus staan. Dit laat toe om een onderscheid te maken tussen de eigenlijke waarnemingen en de context waarin ze werden gevonden, bv. een waarneming met de typologie ‘deposities van menselijke resten’ en de context ‘veenbodems’. 
+[^4_inhoudelijke_informatie-5]: <https://inventaris.onroerenderfgoed.be/>.
 
-• Datering: deze concepten omvatten termen voor alle culturele (van prehistorie tot WO II) en geologische (cambrium tot holoceen) dateringen. Voor een overzicht van de culturele periodes, zie ook fig. 4.1
+De ‘**waarnemingen**’ beschrijven resultaten van het archeologisch onderzoek of observaties die relevant zijn voor het begrijpen, waarderen en beheren van archeologische erfgoed[^4_inhoudelijke_informatie-6]. Alle onderzoeken met een archeologische ‘ingreep in de bodem’ worden ingevoerd als waarneming, inclusief verkennend booronderzoek. Dit omvat eveneens geofysisch onderzoek of veldkartering, indien deze acties ook archeologisch relevante waarnemingen opleverden. De hoofdtekst van de fiche omvat een inhoudelijke samenvatting van de waarneming, wat bij de eindverslagen en nota’s neerkomt op de resultaten en interpretatie van het uitgevoerde archeologisch onderzoek. Deze resultaten worden chronologisch gestructureerd volgens de hoofdperioden (@fig-tijdlijn en @fig-waarneming_vb).
 
-• Stijlen en Culturen: dit deel van de thesaurus bevat termen voor alle bouwkundige stijlen en archeologische culturen uit de steen- en metaaltijden. 
+[^4_inhoudelijke_informatie-6]: Voor meer info: <https://inventaris.onroerenderfgoed.be/waarnemingen_info/>.
 
-• Materialen: deze module in de thesaurus bevat termen voor het beschrijven van grondstoffen en materialen (bv. aardewerk, hout, brons, textiel, etc.). 
+De ‘waarnemingen’ worden altijd gekoppeld met één of meer ‘**gebeurtenissen**’. Een gebeurtenis wordt omschreven als het geheel of delen van onderzoeken die aan de oorsprong liggen van een ‘waarneming’. Een gebeurtenis bestaat dikwijls uit een combinatie van verschillende deelonderzoeken, bijvoorbeeld een proefsleuvenonderzoek gecombineerd met verkennend booronderzoek, of een opgraving gecombineerd met zaden- en vruchtenonderzoek, radiokoolstofdateringen, of andere natuurwetenschappelijke analyses. De fiche van de gebeurtenis omschrijft het type en de technische aspecten van het onderzoek, door gebruik te maken van relevante thesaurustermen (zie verder).
 
- 
-Fig. 4.3: Voorbeeld van een kenmerkgroep in de Centrale Aarcheologische Inventaris. Via gestandaardiseerde thesaurustermen wordt aan deze kenmerkgroep informatie over de aangetroffen materialen (hier aardewerk, keramisch bouwmateriaal en natuursteen), de datering (Romeinse tijd) en typologie van de archeologische sporen (waterputten) gekoppeld. De methoden en onderzoekstechnieken, zowel op het terrein (het type vooronderzoek en de opgraving zelf) als analyses op het ingezamelde materiaal (in dit geval een palynologisch en archeobotanisch onderzoek) worden via een gebeurtenis eveneens aan de kenmerkgroep gekoppeld.
+De archeologische waarnemingen vormen samen met de gerelateerde gebeurtenissen de **Centrale Archeologische Inventaris (CAI)**. De CAI is een onmisbaar instrument voor het onderzoek en beheer van het archeologisch erfgoed, o.a. voor het opstellen van een verwachtingspatroon voor startende archeologietrajecten, voor het afbakenen en vaststellen van archeologische zones, het beschermen van archeologische sites, het afbakenen van gebieden waar geen archeologisch erfgoed te verwachten valt, de registratie en opvolging van toevalsvondsten, etc.
 
-De CAI kan heel gericht doorzocht worden, zowel door de geïnteresseerde burger als door professionele erfgoedondernemers of -onderzoekers, door (een combinatie van) thesaurustermen te selecteren in de overeenstemmende velden  (fig. 4.4). De zoekopdracht geeft dan alle waarnemingen weer die gekoppeld zijn aan deze (combinatie van) kenmerken. Alle archeologische waarnemingen gerelateerd aan de in `{r} werkjaar` ontvangen eindverslagen, nota’s of conclusies uit de projecten archeologisch syntheseonderzoek zijn openbaar en publiek toegankelijk. Ze zijn gebundeld onder de gebeurtenis ‘Rapportage archeologie `{r} werkjaar`’.
+### Kenmerkgroepen
+
+Het concept van de ‘**kenmerkgroepen**’ vormt een belangrijk onderdeel van de waarnemingen. De kenmerkgroepen delen de waarneming op volgens inhoudelijk logische elementen. Een kenmerkgroep wordt gevormd door een combinatie van kenmerken die één archeologisch relevant geheel vormen (@fig-kenmerkgroep). Aan een kenmerkgroep worden gebeurtenissen en inhoudelijke thema’s gekoppeld. Het belangrijkste instrument om de kenmerkgroepen en waarnemingen op een gestructureerde wijze te documenteren met een coherente terminologie, is de [**Thesaurus Onroerend Erfgoed**](https://thesaurus.onroerenderfgoed.be/). Het gebruik van thesaurustermen zorgt voor standaardisatie en structuur, en maakt de waarnemingen ook doorzoekbaar. De thesaurus bestaat uit verschillende schema’s of modules, waarbij de volgende relevant zijn voor de CAI:
+
+-   **Typologie (erfgoedtypes)**: dit schema binnen de thesaurus is niet exclusief gelinkt aan archeologie. De concepten omvatten kernbegrippen voor de beschrijving van archeologische objecten, sporen, structuren en deposities, of types van landgebruik, en hun (oorspronkelijke) functie.
+
+-   **Context**: dit is geen aparte thesaurus. De termen die kunnen worden toegekend als context zijn dezelfde als de termen die in de typologische thesaurus staan. Dit laat toe om een onderscheid te maken tussen de eigenlijke waarnemingen en de context waarin ze werden gevonden, bv. een waarneming met de typologie ‘deposities van menselijke resten’ en de context ‘veenbodems’.
+
+-   **Datering**: deze concepten omvatten termen voor alle culturele (van prehistorie tot WO II) en geologische (cambrium tot holoceen) dateringen. Voor een overzicht van de culturele periodes, zie ook @fig-tijdlijn.
+
+-   **Stijlen en Culturen**: dit deel van de thesaurus bevat termen voor alle bouwkundige stijlen en archeologische culturen uit de steen- en metaaltijden.
+
+-   **Materialen**: deze module in de thesaurus bevat termen voor het beschrijven van grondstoffen en materialen (bv. aardewerk, hout, brons, textiel, etc.).
+
+::: {#fig-kenmerkgroep}
+![](figuren/fig_CAI_kenmerkgroep.jpg)
+
+Voorbeeld van een kenmerkgroep in de Centrale Aarcheologische Inventaris. Via gestandaardiseerde thesaurustermen wordt aan deze kenmerkgroep informatie over de aangetroffen materialen (hier aardewerk, keramisch bouwmateriaal en natuursteen), de datering (Romeinse tijd) en typologie van de archeologische sporen (waterputten) gekoppeld. De methoden en onderzoekstechnieken, zowel op het terrein (het type vooronderzoek en de opgraving zelf) als analyses op het ingezamelde materiaal (in dit geval een palynologisch en archeobotanisch onderzoek) worden via een gebeurtenis eveneens aan de kenmerkgroep gekoppeld.
+:::
+
+De CAI kan heel gericht doorzocht worden, zowel door de geïnteresseerde burger als door professionele erfgoedondernemers of -onderzoekers, door (een combinatie van) thesaurustermen te selecteren in de overeenstemmende velden (@fig-zoekformulier). De zoekopdracht geeft dan alle waarnemingen weer die gekoppeld zijn aan deze (combinatie van) kenmerken. Alle archeologische waarnemingen gerelateerd aan de in `{r} werkjaar` ontvangen eindverslagen, nota’s of conclusies uit de projecten archeologisch syntheseonderzoek zijn openbaar en publiek toegankelijk. Ze zijn **gebundeld onder de gebeurtenis ‘[Rapportage archeologie `{r} werkjaar`](https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727)’**[^4_inhoudelijke_informatie-7].
+
+[^4_inhoudelijke_informatie-7]: <https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727>.
 
 Voor de evaluatie van de kenniswinst worden waarnemingen gebaseerd op de ontvangen eindverslagen en nota’s uit `{r} werkjaar` op basis van de gekoppelde thesaurustermen en gebeurtenissen bevraagd. De uitkomsten van deze query’s worden in de volgende paragrafen verder geanalyseerd.
 
- 
-Fig. 4.4: Het zoekformulier voor de module ‘waarnemingen’ van de Inventaris Onroerend Erfgoed . De databank met alle waarneming uit de inventaris vormt de Centrale Archeologische Inventaris (CAI).
+::: {#fig-zoekformulier}
+![](figuren/fig_CAI_zoekformulier_waarneming.jpg)
 
+Het zoekformulier voor de module ‘waarnemingen’ van de Inventaris Onroerend Erfgoed. De databank met alle waarneming uit de inventaris vormt de Centrale Archeologische Inventaris (CAI).
+:::
+
+## Regionale spreiding
+
+Voor de evaluatie van de kenniswinst in `{r} werkjaar`, is het relevant om de spreiding van de opgeleverde eindverslagen en nota’s te beschouwen volgens de ligging van de projectgebieden binnen archeoregio’s, eerder dan volgens hun administratieve indeling (@fig-locatiesEVN). De uit de Nederlandse erfgoedzorg overgenomen term ‘**archeoregio**’ is gedefinieerd als “*gebied waarbinnen zowel sprake is van een globaal verband tussen landschap en bewoningsgeschiedenis als tussen landschapsvormende processen en het ontstaan van archeologische vindplaatsen, en het bodemarchief in het algemeen*”[^4_inhoudelijke_informatie-8].
+
+[^4_inhoudelijke_informatie-8]: Archis, Rijksdienst voor het Cultureel Erfgoed, Nederland: <https://www.cultureelerfgoed.nl/onderwerpen/bronnen-enkaarten/overzicht/archeoregios>.
+
+Elk van de Vlaamse archeoregio’s, die vooral afgebakend zijn op basis van de bodemassociatiekaart[^4_inhoudelijke_informatie-9] en de kaart van de lithologie van de oppervlakkige lagen[^4_inhoudelijke_informatie-10], heeft inderdaad een eigen landschapsvorming en dus ook bewoningsgeschiedenis gekend, en is **gekenmerkt door specifieke condities voor de bewaring en bereikbaarheid van archeologisch erfgoed**.
+
+[^4_inhoudelijke_informatie-9]: <https://dov.vlaanderen.be/page/bodemkaarten>.
+
+[^4_inhoudelijke_informatie-10]: <https://www.atlas-belgique.be/index.php/nl/papieren-versie/2de-atlas-van-belgie> en volgende.
+
+```{r}
+#| label: fig-locatiesEVN
+#| fig-cap: Locaties waarvoor in 2025 een eindverslag werd ingediend (n= xxx), of een nota met eindafwerking (n= xx), per kader (boven). Aantal in 2025 ingediende eindverslagen, per archeoregio en provincie (onder).
+#| warning: false
+
+### spreiding EV + nota's, archeoregio
+
+library(ggplot2)
+p1 <- 
+  EVN2025 |>
+  sf::st_drop_geometry() |>
+  dplyr::group_by(archeoregio, .drop = FALSE, .groups = "drop") |>
+  dplyr::summarise(n = dplyr::n(), .groups = "drop") |>
+  ggplot(aes(x = archeoregio)) +
+  geom_col(aes(y = n, fill = archeoregio)) +
+  geom_text(aes(
+    x = archeoregio,
+    y = n ,
+    label = n,
+    vjust = ifelse(n < 10, -0.4, 1.2)
+  ),
+  hjust = "center",
+  size = 3) +
+  scale_fill_manual(values = RColorBrewer::brewer.pal(6, "Spectral")) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    strip.background = element_rect(color = "grey90", fill = "grey95")
+  ) +
+  labs(y = "aantal", x = "")
+
+# ggsave(
+#   plot = last_plot(),
+#   dpi = 400,
+#   height = 6,
+#   width = 20,
+#   unit = 'cm',
+#   here("04_output", paste0(rapport, "_hist_archeoregio.jpg"))
+# )
+
+### spreiding EV + nota's, provincie
+p2 <- 
+  EVN2025 |>
+  sf::st_drop_geometry() |>
+  dplyr::group_by(provincie, .drop = FALSE, .groups = "drop") |>
+  dplyr::summarise(n = dplyr::n(), .groups = "drop") |>
+  ggplot(aes(x = provincie)) +
+  geom_col(aes(y = n) , fill = "grey80") +
+  geom_text(aes(
+    x = provincie,
+    y = n ,
+    label = n,
+    vjust = ifelse(n < 10, -0.4, 1.2)
+  ),
+  hjust = "center",
+  size = 3) +
+  theme_minimal() +
+  theme(
+    legend.position = "none") +
+  labs(y = "aantal", x = "")
+
+# ggsave(
+#   plot = last_plot(),
+#   dpi = 400,
+#   height = 6,
+#   width = 20,
+#   unit = 'cm',
+#   here("04_output", paste0(rapport, "_hist_provincie.jpg"))
+# )
+
+### spreiding EV + nota's, kaart
+layout <- c(
+  patchwork::area(t = 1, l = 1, b = 25, r = 12),
+  patchwork::area(t = 26, l = 2, b = 31, r = 11),
+  patchwork::area(t = 32, l = 2, b = 37, r = 11)
+)
+
+EVN_centr <- EVN2025 |> sf::st_centroid()
+
+
+p3 <- ggplot() +
+  geom_sf(data = archeoregios, aes(fill = archeoregio), color = NA) +
+  geom_sf(
+    data = provincies,
+    color = "white",
+    fill = NA,
+    linewidth = 0.5
+  ) +
+  geom_sf(
+    data = EVN_centr,
+    aes(color = rapportage),
+    size = 3,
+    shape = 19
+  ) +
+  scale_fill_manual(values = RColorBrewer::brewer.pal(6, "Spectral"),
+                    guide = "none") +
+  scale_color_manual(values = c("lightcoral", "lightsteelblue3", "mediumseagreen", "navyblue")) +
+  
+  ggspatial::annotation_scale(
+    location = "tr",
+    width_hint = 0.2,
+    height = unit(0.15, "cm"),
+    pad_x = unit(0.6, "cm"),
+    pad_y = (unit(1.5, "cm"))
+  ) +
+  ggspatial::annotation_north_arrow(
+    location = "tr",
+    height = unit(1, "cm"),
+    width = unit(1, "cm"),
+    which_north = "false",
+    pad_x = unit(0.6, "cm"),
+    pad_y = unit(2, "cm"),
+    style = ggspatial::north_arrow_fancy_orienteering(text_size = 0)
+  ) +
+  theme_void() +
+  theme(legend.position = c(0.08, .8),
+        legend.title = element_blank(),
+        )
+
+p3 + p1 + p2 +
+  patchwork::plot_layout(design = layout)
+
+ggsave(plot = last_plot(), 
+       dpi = 600,
+       width = 25,
+       height = 20,
+       unit = 'cm',
+       filename = here::here("figuren", 
+                   paste0(rapport, "_kaart_hist_archeorergios.jpg"))
+)
+```
+
+De onderlinge verhouding van de absolute aantallen documenten tussen de archeoregio’s (@fig-locatiesEVN) is uiteraard een weerspiegeling van meerdere factoren, zoals de sterk verschillende oppervlakte die de archeoregio’s omvatten en de lokale economische dynamiek. Het blijkt wel dat archeologische informatie en daaruit volgende kennis(winst) zich vooral zal concentreren op zand- en leembodems in Vlaanderen. Op provinciaal niveau werd het hoogste aantal documenten ontvangen na archeologisch onderzoek in West-Vlaanderen, wat deels te verklaren is door de WO I gerelateerde vondsten in deze provincie.
+
+## Chronologisch overzicht
+
+De gebeurtenis ['Rapportage archeologie `{r} werkjaar`'](https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727) bundelt alle waarnemingen uit de CAI van eindverslagen van archeologische opgravingen en aanvullende analyses (uitgevoerd na het afsluiten van het vooronderzoek) gepubliceerd in `{r} werkjaar`, en vat eveneens de gepubliceerde syntheseonderzoeken van 2024 samen. De resultaten van de onderzoeken worden opgelijst per culturele periode, in chronologische volgorde (van oud naar jong).
+
+Inhoudelijke informatie uit het archeologisch onderzoek – zoals gerapporteerd in de eindverslagen en nota’s – is in de overeenstemmende waarnemingsfiche opgenomen. De volledige fiches kunnen geraadpleegd worden door het volgen van de bijhorende link naar de waarneming in de Centrale Archeologische Inventaris.
+
+Aangezien de waarnemingen de resultaten van een archeologische prospectie of opgraving (d.i. de gebeurtenis) weergeven, zijn deze per definitie niet beperkt tot één periode, laat staan één enkele kenmerkgroep. Eén waarneming en de daar bijhorende opgravingsresultaten uit het eindverslag of nota kan meerdere structuren, sporen en vondsten uit verschillende culturele periodes omvatten. Daardoor kan één vindplaats met archeologische sporen meerdere keren opduiken in onderstaand, chronologisch overzicht.
+
+::: {#fig-gebeurtenis2025}
+![](figuren/fig_CAI_rapportage_kenniswinst.jpg)
+
+Screenshot van de gebeurtenis ['Rapportage archeologie 2025'](https://inventaris.onroerenderfgoed.be/gebeurtenissen/1085727), met de oudste aangetroffen archeologische sporen zoals gerapporteerd in de ontvangen eindverslagen en nota’s met eindafwerking in 2025.
+:::
+
+### Steetijd
+
+**oude steentijd (paleolithicum)**
+
+**middensteentijd (mesolithicum)**
+
+**jonge steentijd (neolithicum)**
+
+### Metaaltijden
+
+**bronstijd**
+
+**ijzertijd**
+
+### Romeinse periode
+
+### Middeleeuwen
+
+**vroege middeleeuwen**
+
+**volle middeleeuwen**
+
+**late middeleeuwen**
+
+### Nieuwe tijd
+
+### Nieuwste tijd
+
+### WO I
+
+### WO II
+
+Het overgrote deel van de eindverslagen kon rapporteren over relevante archeologische sporen die werden aangetroffen tijdens het terreinonderzoek, en over de resultaten van de verwerking van de aangetroffen vondsten en de interpretatie van het geregistreerde sporenbestand. Toch leverden een beperkt aantal uitgevoerde opgravingen niet het verwachte resultaat op – zoals geformuleerd na het afronden van het vooronderzoek – en werden geen noemenswaardige sporen of vondsten aangetroffen tijdens de uitgevoerde werken. Meestal betreft het werfbegeleidingen van lineaire tracés met beperkte sleufbreedte. Een werfbegeleiding heeft als doel om het archeologische bodemarchief maximaal te registreren en te onderzoeken, daar waar een volwaardige archeologische opgraving niet mogelijk of opportuun is, waardoor de kans op kenniswinst op zich al lager is. Bij andere opgravingen werden de archeologische lagen niet bereikt of verstoord tijdens de werken. In `{r} werkjaar` beperkte zich dit tot **xx** eindverslagen met beperkte kenniswinst.
+
+**Onderzoeken zonder noemenswaardige sporen of vondsten**
+
+## Syntheseonderzoek
+
+Het is een inherent kenmerk van de archeologische regelgeving in Vlaanderen dat studie na de Maltaopgravingen vaak beperkt blijft tot het niveau van de vindplaats en op die manier de gedetailleerde uitwerking en geïntegreerde synthese mist die tot diepgaande nieuwe kennis over het verleden leiden. Extra onderzoekstappen vragen echter extra middelen, die niet op de bouwheer kunnen verhaald worden. Daarom besliste de Vlaamse Regering om vanaf 2018 jaarlijks een budget beschikbaar te maken voor archeologisch vervolgonderzoek[^4_inhoudelijke_informatie-11]. De financiële middelen worden via een projectoproep verdeeld. Deze oproep staat open voor de gehele archeologische sector, zowel de uitvoerende (private) archeologiebedrijven als de wetenschappelijke instellingen en (boven)lokale overheidsdiensten. Samenwerking wordt sterk aanbevolen. Een jury buigt zich over de ingediende projectvoorstellen, waarbij de meest betekenisvolle, vernieuwende of creatieve de voorkeur krijgen.
+
+[^4_inhoudelijke_informatie-11]: <https://www.onroerenderfgoed.be/projectsubsidies-voor-synthese-onderzoek>.
+
+In `{r} werkjaar` werden **xx** eindverslagen van gesubsidieerde syntheseprojecten archeologie gepubliceerd in ‘SYNTAR’, een digitale reeks, vrij toegankelijk via het Open Archief van het agentschap Onroerend Erfgoed[^4_inhoudelijke_informatie-12].
+
+[^4_inhoudelijke_informatie-12]: <https://oar.onroerenderfgoed.be/reeks/SYNT>.
+
+-   [Post-middeleeuwse evoluties in de veeteelt in Vlaanderen](https://doi.org/10.55465/RWTC7369): inzichten uit archeozoölogisch onderzoek (SYNTAR 28)[^4_inhoudelijke_informatie-13].
+-   [De kleine stad in de middeleeuwen](https://doi.org/10.55465/SDMR7062). Een Malta blik op stedelijkheid, stadsmorfologie en -landschap. Casus: Deinze (SYNTAR 29)[^4_inhoudelijke_informatie-14].
+-   [Potten productie en prehistorische gemeenschappen](https://doi.org/10.55465/OLJB5033). Syntheseonderzoek naar aardewerk uit de ijzertijd uit de Rupelstreek en Klein-Brabant (SYNTAR 30)[^4_inhoudelijke_informatie-15].
+-   [Vroeg La Tène occupatie ten westen van Leie en Schelde](https://doi.org/10.55465/AHNS7663). Een woelige periode door migratie en klimaatverandering? (SYNTAR 31)[^4_inhoudelijke_informatie-16].
+
+[^4_inhoudelijke_informatie-13]: [@gruwier2025a].
+
+[^4_inhoudelijke_informatie-14]: [@demulder2025a].
+
+[^4_inhoudelijke_informatie-15]: [@vandervelde2025].
+
+[^4_inhoudelijke_informatie-16]: [@dyselinck2025a].
+
+## Karakteristieken van de kenniswinst
+
+### Geografische spreiding per periode
+
+### Chronologische spreiding
+
+### Materiaalcategorieën en analyses
+
+### Typologie
+
+
+## Verdere exploitatie van de kenniswinst en vooruitblik
+
+### Verdere exploitatie
+
+### Vooruitblik: in `{r} werkjaar` uitgevoerde opgravingen
+
+```{r}
+#| warning: false
+#| label: fig-AVAR
+#| fig-cap: "Evolutie van het verschil tussen het totale aantal ingediende archeologierapporten (oranje) en het aantal ingediende eindverslagen (rood)."
+#| 
+library(ggplot2)
+
+EVAR <- AP_docs |> 
+  sf::st_drop_geometry() |> 
+  dplyr::mutate(year = lubridate::year(DATUM_IND)) |> 
+  dplyr::group_by(year, TYPE_NAAM,  .drop = F) |>
+  dplyr::summarise(n = dplyr::n(), .groups = "drop") |> 
+  dplyr::filter(TYPE_NAAM %in% c("archeologierapport", "eindverslag")) |> 
+  dplyr::group_by(TYPE_NAAM) |> 
+  dplyr::mutate(cum = cumsum(n)) |> 
+  dplyr::group_by(year) |> 
+  dplyr::mutate(diff = diff(cum)) |> 
+  dplyr::filter(year >= 2018)
+
+
+ggplot(EVAR) +
+  geom_col(aes(x = year,
+               y = cum, 
+               fill = TYPE_NAAM), 
+           position = "dodge") +
+
+  geom_label(data = EVAR |> dplyr::filter(TYPE_NAAM == "eindverslag"),
+             aes(x = year , y = cum + (abs(diff)/2), label = diff)) +
+  theme_minimal() +
+  scale_fill_manual(values=c("#FDAE61", "#D7191C" )) +
+  scale_x_continuous(breaks = c(2018:werkjaar), labels = c(2018:werkjaar)) +
+  theme(legend.position = "none",
+        plot.subtitle = element_text(hjust = -0.05),
+        text = element_text(size = 10),
+        axis.text.x = element_text(size = 10),
+        strip.background = element_rect(color = "grey90", fill = "grey95")
+        ) +
+  labs(subtitle = "aantal") +
+  ylab("") + xlab("")
+
+# ggsave(plot = last_plot(), 
+#        file = here("figuren", paste0(rapport, "_verschil_EVAR.jpg")),
+#        width = 20,
+#        height = 8, 
+#        unit = 'cm',
+#        dpi = 300)
+```
+
+### Vooruitblik: vooronderzoek bij vergunningsplichtige ingrepen uitgevoerd in `{r} werkjaar`
+
+## Samenvatting evaluatie kenniswinst
+
+Volgende observaties en conclusies kenmerken de archeologische kenniswinst gerapporteerd in `{r} werkjaar`.
+
+**Volume aan ingediende documenten:**
+
+-   ...
+-   ...
+-   ...
+
+**Vergunningsplichtige ingrepen in de bodem, culturele informatie:**
+
+-   ...
+-   ...
+-   ...
+
+**Vergunningsplichtige ingrepen in de bodem, natuurwetenschappelijke informatie:**
+
+-   ...
+-   ...
+-   ...
+
+**Wetenschappelijke vraagstellingen:**
+
+-   ...
+-   ...
+-   ...
+
+**Toevalsvondsten:**
+
+-   ...
+-   ...
+-   ...
+
+**Nota’s met eindafwerking:**
+
+-   deze vorm van rapportage volgt na het afronden van een vooronderzoek met ingreep in de bodem, waarbij werd vastgesteld dat het aanwezige kennispotentieel kan worden gevalideerd door een analyse van de ingezamelde vondsten, sporen en structuren. Meestal betreft het geïsoleerde contexten, met weinig tot geen aanvullende archeologische vondsten of sporen binnen het projectgebied. Daardoor is een vlakdekkende opgraving niet te verantwoorden. Dikwijls behandelen deze nota’s met eindafwerking studies van houtskoolmeilers, die waardevolle informatie opleveren over de vroegere aanwezigheid van bossen en hun soortensamenstelling.
+-   ...
+
+**vooruitblik**
+
+-   ...
+-   ...

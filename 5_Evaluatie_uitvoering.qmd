@@ -1,4 +1,100 @@
 # Evaluatie uitvoering regelgeving
 
+```{r}
+#| echo: false
+source("_common.R")
+```
+
+## Duurtijd onderzoek
+
+Wanneer een initiatiefnemer geconfronteerd wordt met een archeologietraject, heeft dit invloed op de timing van zijn ontwerp- en vergunningstraject. Daarom kijken we naar de tijdsinvestering voor het opmaken van (archeologie)nota’s en het uitvoeren van opgravingen.  
+
+Bij het melden van de (archeologie)nota geven de erkende archeologen aan hoeveel werkdagen zij besteed hebben aan de opmaak ervan, in de vorm van onderzoek en rapportering (analyse 1, evarch 46). Werkdagen mag men daarbij niet verwarren met kalenderdagen of mensdagen. Zo is het perfect mogelijk dat de erkende archeoloog drie werkdagen heeft gepresteerd, verspreid over twee weken. De werkdagen hoeven niet aaneen te sluiten en komen dus ook niet overeen met kalenderdagen. Het aantal werkdagen zegt ook niets over het aantal arbeidsuren dat gepresteerd is. Wanneer men alleen werkt aan een archeologienota gedurende vijf werkdagen of men werkt er met twee aan, dan is het aantal werkdagen gelijk, maar het aantal mensdagen dubbel zo groot.  
+
+Bij de archeologienota’s met aktename ligt de mediaan op **x** werkdagen, net zoals in `{r} werkjaar -1`. In de densiteitsgrafiek (analyse 1) is een duidelijk piek zichtbaar op **x** werkdagen, het aantal archeologienota’s dat langer dan tien werkdagen vergt, is erg beperkt. Bij de archeologienota’s beperkte samenstelling zien we dat deze minder tijd in beslag nemen. Hier zien we een mediaan van **x** werkdagen (analyse 3), **x** dag/dagen meer dan in `{r} werkjaar -1`.  
+
+Bij de nota’s met aktename ligt de mediaan op **x** werkdagen, net zoals in `{r} werkjaar -1`, maar in de densiteitsgrafiek (analyse 1) zien we pieken op **x en y** werkdagen. Aangezien er bij de nota’s een grotere diversiteit zit in de uitgevoerde onderzoeken verschilt de duurtijd voor de opmaak ervan ook. Bij de bulk van de nota’s wordt enkel uitgesteld proefsleuvenonderzoek uitgevoerd. Hierbij ligt de mediaan op **x** werkdagen en beperkt de spreiding zich hoofdzakelijk tussen **x en y** werkdagen. Indien er een proefsleuvenonderzoek voorkomt in combinatie met een landschappelijk bodemonderzoek dan neemt de mediaanduur toe met **x** werkdag. Indien er daarbovenop ook archeologische boringen uitgevoerd worden dan loopt de mediaan op tot **x** werkdagen. Hoe meer onderzoeksmethoden gecombineerd worden, hoe meer werkdagen nodig zijn voor de opmaak van de nota.  
+
+Het tijdsverloop tussen een archeologienota met maatregel ‘uitgesteld vooronderzoek’ en de daadwerkelijke uitvoering ervan kan lang zijn. We zien daarvoor diverse redenen: 
+
+- vergunningsaanvragen waarvan de indiening op zich laat wachten, 
+- lange proceduretermijnen voor de behandeling van vergunningsaanvragen en eventuele beroepen, 
+- de tijd die verloopt tussen het verlenen van de vergunning en de effectieve start van de werken (waarmee de start van het verdere vooronderzoek in sommige gevallen samenhangt).  
+
+De hierboven aangehaalde redenen staan los van het archeologische traject en hangen samen met het vergunnings- en bouwproces. De termijn tussen de aktename van de archeologienota en die van de daaropvolgende nota stijgt in `{r} werkjaar` licht. In de helft van de gevallen bedraagt die een jaar en **x** maanden, en in een kwart van de gevallen loopt die nog op tot twee jaar en **x** maanden (analyse 18).  Net zoals bij de archeologienota’s en nota’s drukken we de tijdsduur van de opgravingen uit in werkdagen (evarch 48). De mediaantermijn van het veldwerk van de opgravingen bedroeg **xx** werkdagen, wat iets minder dan **x** weken is. Dit is iets **korter/langer** dan in `{r} werkjaar -1`. 
+
+Driekwart van de opgravingen was wat betreft hun veldwerk afgerond binnen de 30 dagen. De langste opgraving duurde **xxx** dagen. Dit was een werfbegeleiding die gefaseerd uitgevoerd werd. Er was bijgevolg niet elk van deze dagen een archeoloog aanwezig.  
+
+Wanneer tijdens de uitvoering van een bouwwerf een **toevalsvondst** wordt aangetroffen dan moet de initiatiefnemer de werken stopzetten en Onroerend Erfgoed informeren over de vondst. Indien nodig voert het agentschap Onroerend Erfgoed een opgraving uit. Tijdens die periode ligt de bouwwerf geheel of gedeeltelijk stil. Van de **xx** opgravingen van toevalsvondsten die in `{r} werkjaar` werden uitgevoerd, duurden er **xx** minder dan **xx** dagen (evarch 13). In **xx** gevallen bleef de opgraving beperkt tot minder dan **xx** dagen en in **xx** gevallen nam de opgraving meer dan 30 dagen in beslag. Wanneer de opgraving van een toevalsvondst langer dan 30 dagen duurt, kan de zakelijkrechthouder een tegemoetkoming eisen. Door in overleg te gaan met de zakelijkrechthouder werd er bij geen enkele van de opgravingen van toevalsvondsten die langer dan 30 dagen duurde een schadevergoeding gevraagd. 
+
+Na het veldwerk van de opgraving volgt nog een fase van verwerking waarin de archeoloog de onderzoeksdocumenten, vondsten en stalen bestudeert en zijn bevindingen omzet in een eindverslag. De tijdsduur tussen het einde van het veldwerk en het indienen van het eindverslag heeft geen effect op het bouwproces.  
+
+Als we kijken naar de doorlooptijd van een archeologietraject van archeologienota tot eindverslag dan zien we dat de mediaan op **xx** kalenderdagen ligt (LTAnalyse 8), iets meer dan 2 jaar en **x** maanden. Hierin zijn een aantal deelfasen te onderscheiden, maar de langstdurende zijn de fase tussen de melding van de initiële archeologienota en de daaropvolgende nota, na het verkrijgen van de omgevingsvergunning en de uitvoering van het uitgestelde vooronderzoek (**xxx** dagen) en de fase tussen de afronding van de opgraving en rapportage hiervan in een eindverslag (**xxx** dagen). Dit zijn beide periodes waarin archeologen geen veldwerk uitvoeren en die dus geen vertraging betekenen voor het bouwproces. De archeologische opgraving zelf duurt slechts **xx** kalenderdagen (mediaan).
+
+## Kostprijs onderzoek
+
+Dit hoofdstuk gaat dieper in op de financiële effecten van het archeologische proces. Deze effecten hebben betrekking op de initiatiefnemers, maar evenzeer op de overheid. De centrale vraag is: wat kost archeologie? Niet alleen de totale kostprijs komt aan bod, maar ook deelaspecten zoals het effect van de beperkte samenstelling op de factuur voor een archeologienota, de kostprijs van onderzoek na toevalsvondsten, de kostprijs van archeologische opgravingen, enz.
+
+### (archeologie)nota's
+
+De totale gerapporteerde kostprijs voor de opmaak van de **xxx** archeologienota’s met aktename bedroeg **xxx** euro (evarch 52). Dit is **xxx** **minder/meer** dan in `{r} werkjaar`, een **daling/stijging** van **x,x**%.  
+
+De mediaanprijs van de archeologienota’s bedraagt **xxx** euro, **xxx** euro minder dan in `{r} werkjaar -1` (analyse 8). De spreiding in kostprijs is klein, maar er is wel een duidelijk verschil met de archeologienota’s met beperkte samenstelling. Bij die groep is de mediaanprijs **xxx** euro (analyse 10).  
+
+Bij de nota’s was de totale kostprijs **xxx** euro (evarch 52), **xxx** euro **meer/minder** dan in `{r} werkjaar -1` (+**x**%).  
+
+De mediaanprijs bij de nota’s ligt op **xxx** euro, **xxx** euro **meer/minder** dan het voorgaande jaar (analyse 8). Net zoals voor de duurtijd is er in deze groep wel een grotere spreiding van de kostprijzen (analyse 11). De mediaanprijs voor enkel proefsleuvenonderzoek ligt op **xxx**euro, **xxx** euro meer dan in `{r} werkjaar -1`. Wanneer er een proefsleuvenonderzoek en een landschappelijk onderzoek wordt uitgevoerd is de mediaan van de kostprijs **xxx** euro (`{r} werkjaar -1`: **xxx** euro) en wanneer er daarbovenop ook een archeologisch booronderzoek wordt uitgevoerd is de mediaan van de kostprijs **xxx** euro, **xxx** euro **minder/meer** dan in `{r} werkjaar -1`. Voor de overige combinaties zijn de aantallen te laag om uitspraken te doen.  
+
+In tegenstelling tot de kostprijs van de archeologienota’s, die verder blijft dalen, zien we dat de kostprijs van de nota’s iets stijgt. Dit is het geval bij alle verschillende vormen van onderzoek die binnen een nota uitgevoerd kunnen worden. Deze stijging van de kostprijs zien we ook bij de opgravingen. Bij zowel de nota’s als de opgravingen gaat het om beperkte stijgingen. De komende jaren zullen uitwijzen of het effectief om een stijging gaat of eerder een stabilisatie van de kostprijzen.
 
 
+### Eindverslagen
+
+De totale kost voor archeologische opgravingen bij ontwikkelingsprojecten met eindverslag in `{r} werkjaar` bedroeg **xxx** euro (analyse 33), wat **xxx** euro **minder/meer** is dan in `{r} werkjaar -1`. De mediaankost bedraagt **xxx** euro, met een kostprijs van maximaal **xx** euro vatten we al driekwart van de opgravingen. Hierbij moet worden opgemerkt dat we de kosten voor opgravingen rapporteren in het jaar dat het eindverslag werd ingediend. Pas dan is de opgraving afgerond en zijn alle kosten gekend. In praktijk is het perfect mogelijk en zelfs courant dat de initiatiefnemer al in eerdere jaren een deel van die kosten heeft betaald.  
+
+In `{r} werkjaar` noteren we **xx** onderzoeken waarvan de kostprijs meer dan 100.000 euro bedroeg. Bij **xx** projecten situeert de kostprijs zich tussen 100.000 en 200.000 euro, **xx** opgravingen hebben een kostprijs van meer dan 500.000 euro. De hoogste kostprijs voor een opgraving bedroeg **xxx** euro.  
+
+De totale kostprijs van een archeologietraject, dus de kostprijs van de initiële archeologienota, de eventuele nota en de opgraving, is in de helft van de gevallen minder dan **xxx** euro (LTAnalyse 10). Bij een bijkomend kwart loopt de kostprijs op tot **xxx** euro.  
+
+Het onderzoek na melding van een toevalsvondst gebeurt door het agentschap Onroerend Erfgoed. Naast inzet van eigen personeel en middelen besteedt het agentschap via raamcontracten ook een aantal taken uit aan de archeologische markt. In `{r} werkjaar` bedroeg de totale kostprijs voor het onderzoek na toevalsvondsten **xxx** euro (evarch 55). Dat betekent een **stijging/daling** met **xxx** euro ten opzichte van het voorgaande jaar. Gezien de aard van toevalsvondsten is dit een bedrag dat sterk fluctueert van jaar tot jaar.
+
+
+### Premies, fondsen en subsidies
+
+Sinds april 2019 bestaat er een premie voor archeologisch vooronderzoek met ingreep in de bodem. Deze was oorspronkelijk bestemd voor particulieren, kleinschalige ondernemingen en kleinschalige verenigingen die met dergelijk onderzoek te maken krijgen, maar werd in 2023 uitgebreid naar occasionele bouwheren die de kosten voor verplicht archeologisch vooronderzoek niet kunnen spreiden over verschillende bouwprojecten of kunnen deze doorrekenen. Projecten van bouwheren die tot de vastgoedsector behoren, projecten van overheden en (semi-)overheidsinstellingen, projecten van nutsbedrijven, beheerders van distributienetten, -netwerken of infrastructuur voor openbare nutsvoorzieningen, vastgoed dat wordt ontwikkeld om te verkopen en verkavelingen komen niet in aanmerking.  
+
+De berekening van de premie gebeurt op forfaitaire wijze aan de hand van een formule, en de kosten voor het vooronderzoek zonder ingreep in de bodem blijven voor rekening van de initiatiefnemer. Die kan de premie aanvragen zodra er een aktename is van de archeologienota of nota die het vooronderzoek met ingreep in de bodem afsluit. De premie bedraagt 80% van de forfaitair berekende kostprijs van het vooronderzoek met ingreep in de bodem.
+
+Het agentschap keurde **xx** premie-aanvragen goed, met een uitgekeerd totaalbedrag van **xxx** euro (evarch 64, evarch 65). Zowel het aantal uitgekeerde premies (van 53 naar 41), als het totaal uitgekeerde bedrag **daalt/stijgt** (van 249.772,42 euro naar **xxx*** euro) sterk ten opzichte van `{r} werkjaar -1`.
+
+Voor archeologische opgravingen bestaat al langer een premie: de premie voor buitensporige opgravingskosten. Deze heeft dezelfde doelgroep als de premie voor archeologisch vooronderzoek en dezelfde werken of types projecten zijn uitgesloten van de premie. Ook hier gebeurt de berekening op forfaitaire basis en blijft een vast startbedrag als franchise voor rekening van de initiatiefnemer. Het vroegst mogelijke moment om de premie aan te vragen, is bij de indiening van het archeologierapport, dus maximaal twee maanden na het einde van het veldwerk.  
+
+In `{r} werkjaar` keurde het agentschap Onroerend Erfgoed aanvragen goed van **xx** initiatiefnemers (`{r} werkjaar -1`: **xx**), die samen een totaalbedrag van **xx** euro uitgekeerd kregen (evarch 53, evarch 54). Zowel het aantal aanvragen als het uitgekeerde bedrag blijft bij deze premie **zo goed als gelijk**.  
+
+Voor opgravingen waarvan het terreinwerk na 1 januari 2023 begonnen is, is het mogelijk om een premie menselijke inhumatieresten aan te vragen. Enkel vrijwillig archeologisch onderzoek en archeologisch onderzoek naar aanleiding van een verkaveling zijn uitgesloten voor deze premie.  De premie bedraagt 60% van de forfaitair berekende kostprijs. Als het resultaat van de formule 25.000 euro of minder bedraagt, dan wordt de premie niet uitbetaald. Het maximale premiebedrag bedraagt 500.000 euro.
+
+** In `{r} werkjaar` werden er nog geen aanvragen ingediend voor de premie menselijke inhumatieresten. Dit is voornamelijk omdat de premie pas na het indienen van het eindverslag kan worden aangevraagd. Aangezien dit opgravingen zijn die vaak redelijk wat onderzoek vragen na het veldwerk verwachten we pas aanvragen vanaf 2025. ** 
+
+Naast de verschillende premies voorziet het Onroerenderfgoeddecreet in de mogelijkheid om archeologische solidariteitsfondsen op te richten, te erkennen en te subsidiëren. Een dergelijk fonds vraagt een bijdrage van zijn leden, bijvoorbeeld in verhouding tot het aantal gerealiseerde projecten, ook voor projecten waar geen archeologische opgraving noodzakelijk bleek. Met die middelen keert het fonds een tussenkomst uit aan leden die te maken krijgen met een opgraving. De concrete modaliteiten voor lidmaatschap, inning en uitkering zijn onderwerp van een overeenkomst tussen het fonds en de minister. Die kan een subsidiëring geven voor de werking van het erkende fonds. Ook in `{r} werkjaar` zag geen enkel archeologisch solidariteitsfonds het levenslicht (evarch 57), waardoor de teller op nul blijft staan. Er was dan ook geen sprake van subsidies (evarch 58).  
+
+De initiatiefnemers van ontwikkelingsprojecten zijn verantwoordelijk voor de kosten van het archeologisch onderzoek dat noodzakelijk is bij hun projecten. Maar dat onderzoek is beperkt tot de onderzochte site en de interpretatie daarvan. Diepgaander onderzoek, bijvoorbeeld syntheses over sites heen of een diepgaande uitwerking van een exemplarische site, kunnen niet verhaald worden op de initiatiefnemer. Juist om dit kennispotentieel vanuit de verplichte onderzoeken toch te exploiteren en te laten terugvloeien naar de maatschappij, is de projectsubsidie voor archeologisch syntheseonderzoek in het leven geroepen. In die zin is de kost ervan rechtstreeks verbonden aan het archeologische traject. Jaarlijks wordt hiervoor **940.000 euro** vooropgesteld. 
+
+In `{r} werkjaar` kende de minister bevoegd voor onroerend erfgoed aan **6** projecten een subsidie voor syntheseonderzoek toe. De verleende subsidies bedroegen in totaliteit **940.000** euro.
+
+Naast de projectsubsidies voor syntheseonderzoek zijn er sinds 2024 ook projectsubsidies voor educatie en publiekswerking. Deze dienen om de verhalen achter het archeologisch onderzoek en onze archeologische collecties naar een breed publiek te brengen. Jaarlijks wordt hiervoor 500.000 euro vooropgesteld.  
+
+In `{r} werkjaar` kende de minister bevoegd voor onroerend erfgoed aan **x** projecten een subsidie voor educatie en publiekswerking toe. De verleende subsidies bedroegen in totaliteit **500.000** euro.
+
+
+### Totale financiële effecten
+
+De totale gekende kost voor archeologisch onderzoek bij ontwikkelingsprojecten bedroeg in `{r} werkjaar` **xx** euro, **xx** euro minder dan in `{r} werkjaar -1`. Dit is de kostprijs van de archeologienota’s (**xxx**5 euro), de nota’s (**xx** euro), de opgravingen (**xx** euro) en de toevalsvondsten (**xx** euro).  Bij deze totaalkost kunnen we ook nog de **940.000** euro voor de toegekende projectsubsidies voor archeologisch syntheseonderzoek en de **500.000** euro voor de toegekende projectsubsidies voor educatie en publiekswerking rekenen.  
+
+Dit alles brengt het totaal van de kosten op **xxx** euro. De premies voor archeologisch vooronderzoek met ingreep in de bodem, buitensporige opgravingskosten en menselijke inhumatieresten rekenen we niet mee aangezien deze een tegemoetkoming zijn vanuit de overheid in het aandeel kosten dat de initiatiefnemers moeten dragen. De totale investering blijft hetzelfde, maar er is een verschuiving van initiatiefnemers naar overheid.
+
+
+## Samenvatting evaluatie uitvoering archeologieregelgeving
+
+- ...
+- ...
+- ...
